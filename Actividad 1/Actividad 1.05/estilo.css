@@ -1,13 +1,33 @@
+body{
+    height: 500px;
+width: 800px;
+}
+
 #cabecera{
     width: 800px;
     height: 150px;
     background-color:red;
-    border: blue;
 }
 
 #menu{
-    padding-top: 25px;
+    float: left;
+    padding-bottom: 25px;
+    position: relative;
+    padding: 25px;
     width: 200px;
     height: 500px;
     background-color:yellow;
+}
+
+#contenido{
+    background-color: green;
+    height: 500px;
+    width: fit-content;
+}
+
+#pie{
+    background-color: blue;
+    width: 400px;
+    height: 150px;
+    float: right;
 }
