@@ -1,33 +1,109 @@
-body{
-    height: 500px;
-width: 800px;
+#contenedor {
+    border: 1px black solid;
+    width: 900px;
+    overflow: hidden;
 }
 
-#cabecera{
-    width: 800px;
+#cabecera {
+    border: 5px black solid;
     height: 150px;
-    background-color:red;
+    background-color: red;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
-#menu{
+#menu {
+    border: 5px blue solid;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
     float: left;
-    padding-bottom: 25px;
-    position: relative;
-    padding: 25px;
     width: 200px;
     height: 500px;
-    background-color:yellow;
+    background-color: yellow;
 }
 
-#contenido{
+#contenido {
     background-color: green;
     height: 500px;
-    width: fit-content;
+    width: 575px;
+    /*float: right;*/
+    display: inline-flex;
 }
 
-#pie{
+#pie {
+    border: 3px gray solid;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
     background-color: blue;
     width: 400px;
     height: 150px;
     float: right;
+}
+
+#imagen1 {
+    background-color: black;
+    width: 45%;
+    height: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+#imagen2 {
+    background-color: black;
+    width: 45%;
+    height: 20%;
+    margin-left: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+}
+
+div.Logo h2 {
+    color: black solid;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 200px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div.Titulo h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.columna1 {
+    border: 3px blue solid;
+    background-color: white;
+    height: 450px;
+    width: 50%;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+div.columna2 {
+    border: 3px gray solid;
+    background-color: white;
+    height: 450px;
+    width: 50%;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
 }
