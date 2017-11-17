@@ -1,13 +1,4 @@
-var contador = 0;
-
-function calculoCero() {
-    var numero = document.getElementById("txt").value,
-        cajaTexto = document.getElementById("txt");
-    if (numero != 0) {
-        contador++;
-        cajaTexto.value = "";
-        cajaTexto.focus;
-    } else {
-        return alert(contador);
-    }
+function convertirLetras() {
+    var dato = prompt("Ingrese una cadena de texto para convertir: ");
+    return alert("Mayuscula: " + dato.toUpperCase() + "\n Minuscula: " + dato.toLowerCase() + "\n Cadena ingresada: " + dato);
 }
