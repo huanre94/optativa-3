@@ -1,55 +1,67 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<!-- cabecera del documento -->
-<head>
-	<title>Cambio de colores</title>
-    
-    <style type="text/css" >
-	
-	#cuadro1 {background-color:#0FC;}
-	
-	</style>
-    
-    <script type="text/javascript">
-	
-	function derecho (){ 
+<!-- cabecera del documento -->
 
-	}
-	
-	window.onload= function (){
-	
-	document.getElementById("uno").oncontextmenu=derecho;
-	
-	}
-	
-	</script>
+<head>
+    <title>Cambio de colores</title>
+
+    <style type="text/css">
+        #cuadro1 {
+            background-color: #0FC;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function derecho() {}
+
+        window.onload = function() {
+            document.getElementById("uno").oncontextmenu = derecho;
+            alert("Bienvenido a la seleccion");
+        }
+
+        window.onunload = function() {
+            document.getElementById("uno").oncontextmenu = derecho;
+            alert("¡Gracias por usar el programa, adios!");
+        }
+
+        function cambiarColor(color) {
+            var pantalla = document.getElementById("uno").style.background = color;
+        }
+
+        function mostrarColor() {
+            var color = document.body.style.backgroundColor;
+            console.log(color);
+            alert(color);
+        }
+    </script>
 </head>
 
 <!-- cuerpo del documento -->
+
 <body id="uno">
-<!--tabla con las imagenes-->
-	<table border=0 align=center width="50%">
-	    <tr>
-			<td >
-       			<img border="1" align="left" width="50px"src="images/yellow.gif"  /> 
-	       		</td>
-				<td>
-				<img border="1" align="left" width="50px" src="images/red.gif"/>
-				</td>
-				<td>
-				<img border="1" align="left" width="50px" src="images/white.gif"/>
-				</td>
-				<td>
-				<img border="1" align="left" width="50px" src="images/blue.gif"/>
-				</td>
-				<td>
-				<img border="1" align="left" width="50px" src="images/green.gif"/>
-				</td>
+    <!--tabla con las imagenes-->
+    <table border=0 align=center width="50%">
+        <tr>
+            <td>
+                <img border="1" align="left" width="50px" src="images/yellow.gif" onmouseover="cambiarColor('yellow');" />
+            </td>
+            <td>
+                <img border="1" align="left" width="50px" src="images/red.gif" onmouseover="cambiarColor('red');" />
+            </td>
+            <td>
+                <img border="1" align="left" width="50px" src="images/white.gif" onmouseover="cambiarColor('white');" />
+            </td>
+            <td>
+                <img border="1" align="left" width="50px" src="images/blue.gif" onmouseover="cambiarColor('blue');" />
+            </td>
+            <td>
+                <img border="1" align="left" width="50px" src="images/green.gif" onmouseover="cambiarColor('green');" />
+            </td>
 
-    		</tr>	
-		</table>
+        </tr>
+    </table>
+    <input type="button" value="Mostrar color" onclick="mostrarColor();">
+    <!--fin tabla-->
+</body>
 
-	<!--fin tabla-->
-	</body>
 </html>
-
