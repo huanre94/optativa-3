@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>Formulario Optativa</title>
+    <link rel="stylesheet" type="text/css" href="./estilo.css" </head>
+    <script type=text/javascript"" src="./script.js"></script>
+
+    <body>
+        <h1>Formulario para inscripcion de comercio</h1>
+        <h2>Informacion del representante legal</h2>
+        <table>
+            <tr>
+                <td>
+                    <label>Documento: </label>
+                </td>
+                <td>
+                    <fieldset>
+                        <input type="radio" name="documento" id="rad_cedula">Cedula
+                        <input type="radio" name="documento" id="rad_ruc">RUC
+                        <input type="radio" name="documento" id="rad_pasaporte">Pasaporte
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Cedula: </label>
+                </td>
+                <td>
+                    <input type="text" id="txt_cedula">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nombre: </label>
+                </td>
+                <td>
+                    <input type="tel" id="txt_telefono">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Apellido: </label>
+                </td>
+                <td>
+                    <input type="text" id="txt_apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Direccion: </label>
+                </td>
+                <td>
+                    <input type="text" id="txt_direccion">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Telefono: </label>
+                </td>
+                <td>
+                    <input type="tel" id="txt_telefono">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Fecha de nacimiento: </label>
+                </td>
+                <td>
+                    <input type="date" id="txt_telefono">
+                </td>
+            </tr>
+        </table>
+        <h2>Informacion del comercio</h2>
+        <tr>
+            <table>
+                <tr>
+                    <td>
+                        <label>Nombre comercial: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txt_nombre_comercial">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Razon social: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txt_razon_social">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Direccion comercio: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="txt_direccion_comercio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Ofrece: </label>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <input name="oferta" type="radio" id="rad_bien">Bienes
+                            <br>
+                            <input name="oferta" type="radio" id="rad_servicio">Servicios
+                            <br>
+                            <input name="oferta" type="radio" id="rad_ambos">Ambos
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <input type="submit" id="btn_aceptar" value="Cargar informacion">
+                    <br>
+                    <input type="button" id="btn_limpiar" value="Limpiar" </td>
+                </fieldset>
+        </tr>
+    </body>
+
+</html>
