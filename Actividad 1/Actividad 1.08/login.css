@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.input {
+	border: 2px inset #B3B3FF;
+	background: url(bg3891345122) repeat-x #B3B3FF;
+	font-family: tahoma, helvetica, sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	color: #454743;
+}
+
+.login {border:groove;
+		margin:40px auto;
+		background:white;
+		width:300px;}
+		
+body{background:#C5E8FC}
+
+#imagen{text-align:center;}
+
+

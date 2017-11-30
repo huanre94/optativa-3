@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DPW</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script type="text/javascript" src="script.js">
+    </script>
+</head>
+
+<body>
+    <div id="imagen"><img src="imagen/candado.png" width="204" height="204" /></div>
+    <div id="mensajes"></div>
+    <div id="acceso">
+        <!-- FORMULARIO de ACCESO -->
+        <form name="login" onsubmit="return entrar()" action="http://www.ucsg.edu.ec">
+            <table border="0" cellpadding="2" cellspacing="5" align="center">
+                <tr>
+                    <td colspan="4" class="bold">
+                        <h2>Usuarios registrados</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="86"><b>Usuario </b></td>
+                    <td width="94"><input class="input" name="user" type="text" size=15></td>
+                </tr>
+                <tr>
+                    <td><b>Contrase&ntilde;a</b></td>
+                    <td><input class="input" name="passwd" type="password" size=15></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input name="entrar" value="  Entrar  " type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="designinfo">
+        <p style="text-align:center">OPTATIVA 3</p>
+    </div>
+</body>
+
+</html>
