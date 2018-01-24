@@ -10,7 +10,18 @@
 <body>
 <?php
 if(isset($_REQUEST['Cargar'])){
-	print("Has pulsado el boton")
+	print("Has pulsado el boton");
+	
+	$enlace = mysqli_connect('localhost','root','');
+	
+	if(!enlace){
+	die('No pudo conectarse: '.mysqli_error());
+	}
+	
+	echo '</br>Conectado satisfactoriamente';
+	mysqli_select_db($enlace,'dpw') or die('No se pudo seleccionar la BD');
+	
+	mysqli_close($enlace);
 }
 
 ?>
