@@ -10,18 +10,33 @@
 <body>
 <?php
 if(isset($_REQUEST['Cargar'])){
-	print("Has pulsado el boton");
-	
-	$enlace = mysqli_connect('localhost','root','');
-	
-	if(!enlace){
-	die('No pudo conectarse: '.mysqli_error());
+		print ("HAS PULSADO EL  BOTON");
+
+	//CONECTAR CON LA BASE DE DATOS
+
+	$enlace =  mysqli_connect('localhost:3307', 'root','', 'dpw');
+	//$enlace =  mysqli_connect('localhost', 'usuario','1234', 'dpw');
+	if (!$enlace) {
+    die('No pudo conectarse: ' . mysqli_error($enlace));
 	}
-	
-	echo '</br>Conectado satisfactoriamente';
-	mysqli_select_db($enlace,'dpw') or die('No se pudo seleccionar la BD');
-	
+	echo '</br>Conectado satisfactoriamente <br>';
+	$tabla=$_REQUEST['tabla'];
+	echo $tabla;
+	$query="select *from $tabla";
+	$resultado=mysqli_query($enlace, $query) or die ("<br>Hubo un error al ejecutar 
+		el SQL" . mysqli_error($enlace));
+
+	if(mysqli_num_rows($resultado)>0){
+		echo "mostrar los registros<br>";
+		$filas = mysqli_fetch_assoc($resultado);
+		print "$filas[nombre] $filas[anio] $filas[campeonatos]  ";
+	}
+	else
+		echo "no hay resultados";
+
 	mysqli_close($enlace);
+
+	}
 }
 
 ?>
